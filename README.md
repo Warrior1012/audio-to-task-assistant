@@ -77,3 +77,7 @@ The repository's root contains backend code but no dedicated frontend build setu
 ## License
 
 No license is specified in this repository.
+
+## Secret hygiene
+
+The tracked `.env` file was removed from the current branch and `.env.example` is provided instead. Because the previous file may remain in Git history, revoke and rotate any real Gemini key that was stored there. Copy `.env.example` to a local `.env` and never commit the local file.
